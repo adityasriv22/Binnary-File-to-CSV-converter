@@ -1,12 +1,12 @@
 from os.path import exists
 print "Type the Filename: "
-input_file = raw_input('::')
+input_file = raw_input('>>>>')
 output_file = open("binascii_out.csv","wb")
 if exists(input_file):
 	in_file = open(input_file,"r")
 	output_str = in_file.read()
 else:
-	print "No such file found"
+	print "No such file found :"
 i = 0
 result_str =""
 for i in range(0,len(output_str)):
